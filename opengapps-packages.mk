@@ -186,8 +186,6 @@ ifneq ($(filter 23,$(call get-allowed-api-levels)),)
 DEVICE_PACKAGE_OVERLAYS += \
     $(GAPPS_DEVICE_FILES_PATH)/overlay/browser
 endif
-PRODUCT_PACKAGES += \
-    Chrome
 endif
 
 ifneq ($(filter 23,$(call get-allowed-api-levels)),)
