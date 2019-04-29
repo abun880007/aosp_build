@@ -218,5 +218,7 @@ PRODUCT_PACKAGES += \
 endif
 
 PRODUCT_PACKAGES += \
+    PixelLauncher \
     Wallpapers
+endif
 endif
