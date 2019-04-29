@@ -26,7 +26,6 @@ GAPPS_PRODUCT_PACKAGES += \
 ifneq ($(filter 23,$(call get-allowed-api-levels)),)
 GAPPS_PRODUCT_PACKAGES += \
     GoogleTTS \
-    GooglePackageInstaller
 endif
 
 ## in oreo (api level 26), installing PrebuiltGmsCoreInstantApps
@@ -95,7 +94,6 @@ GAPPS_FORCE_BROWSER_OVERRIDES := true
 GAPPS_PRODUCT_PACKAGES += \
     Books \
     CloudPrint2 \
-    EditorsDocs \
     Drive \
     FitnessPrebuilt \
     PrebuiltKeep \
@@ -103,8 +101,6 @@ GAPPS_PRODUCT_PACKAGES += \
     Music2 \
     Newsstand \
     PlayGames \
-    EditorsSheets \
-    EditorsSlides \
     talkback
 
 ifneq ($(filter stock,$(TARGET_GAPPS_VARIANT)),) # require at least stock
@@ -141,14 +137,9 @@ GAPPS_PRODUCT_PACKAGES += \
     CarrierServices \
     GoogleEarth \
     GCS \
-    GoogleHindiIME \
-    GoogleJapaneseInput \
-    KoreanIME \
-    GooglePinyinIME \
     Tycho \
     Street \
-    TranslatePrebuilt \
-    GoogleZhuyinIME
+    TranslatePrebuilt
 
 ifneq ($(filter 28,$(call get-allowed-api-levels)),)
 GAPPS_PRODUCT_PACKAGES += \
@@ -227,6 +218,5 @@ PRODUCT_PACKAGES += \
 endif
 
 PRODUCT_PACKAGES += \
-    PixelLauncher \
     Wallpapers
 endif
